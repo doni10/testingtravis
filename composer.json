@@ -1,0 +1,32 @@
+{
+    "name": "aston/cart",
+    "description": "Shopping Cart",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincent Letourneau",
+            "email": "vincent@nanoninja.com"
+        }
+    ],
+    "scripts": {
+        "server": "php -S localhost:3000 -docroot &"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aston\\": "src/Aston"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aston\\": "test/Aston"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^7",
+        "phpunit/php-code-coverage": "^6.1@dev",
+        "squizlabs/php_codesniffer": "^3.0@dev"
+    }
+}
